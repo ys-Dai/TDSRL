@@ -31,10 +31,16 @@ python train.py --dataset=SWaT --TA_replacing=0.5 --num_FD_perturbation_position
 
 After training, you will get the model parameters in the file `logs`, which is the default path.
 
-If you need the evaluate the network, please select your dataset, trained model and corresponding parameters. Then run the file `evaluate.py`, for example:
+If you need to evaluate the network, please select your dataset, trained model and corresponding parameters. Then run the file `evaluate.py`, for example:
 
 ```
 python evaluate.py --dataset=SWaT --model_dict=logs\Example_SWaT\Example_SWaT_model.pt --parameters_dict=logs\Example_SWaT\state\Example_SWaT.pt --window_sliding=16 
+```
+
+If you want to save the evaluations results to the path and file you specify, please run as following:
+
+```
+python evaluate.py --matrics_outfile=path\file_name.txt --dataset=SWaT --model_dict=logs\Example_SWaT\Example_SWaT_model.pt --parameters_dict=logs\Example_SWaT\state\Example_SWaT.pt
 ```
 
 
