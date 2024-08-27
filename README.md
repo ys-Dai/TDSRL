@@ -43,9 +43,11 @@ If you want to save the evaluations results to the path and file you specify, pl
 python evaluate.py --matrics_outfile=path\file_name.txt --dataset=SWaT --model_dict=logs\Example_SWaT\Example_SWaT_model.pt --parameters_dict=logs\Example_SWaT\state\Example_SWaT.pt
 ```
 
+<!---
+## Reference
 
-%## Reference
+We appreciate the following github repos a lot for their valuable code:
 
-%We appreciate the following github repos a lot for their valuable code:
+https://github.com/Jhryu30/AnomalyBERT
 
-%https://github.com/Jhryu30/AnomalyBERT
+-->
